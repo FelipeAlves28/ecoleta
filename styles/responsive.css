@@ -1,3 +1,4 @@
+/* media trabalha para fazer a resposividade da pagina */
 @media (max-width: 900px){
     #page-home  {
         background-position: 70vw;
@@ -15,6 +16,18 @@
     }
     #page-home main{
         align-items: center;
+    }
+    #page-create-point form h1{
+        font-size: 30px;
+    }
+    #page-create-point form legend h2{
+        font-size: 20px;
+    }
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .cards .card img{
+        height: 250px;
     }
 }
 

@@ -2,6 +2,7 @@
     --title-color:#322153;
     --primary-color: #34cb79;
     --hover-primary-color: #2fb86e;
+    --background-default: #f0f0f5;
 }
 
 * {
@@ -16,7 +17,7 @@ html{
 }
 
 body{
-    background: #f0f0f5;
+    background: var(--background-default);
     -webkit-font-smoothing: antialiased;
 }
 

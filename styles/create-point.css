@@ -64,7 +64,7 @@ form .field-group{
 }
 
 form input, form select {
-    background-color: #f0f0f5;
+    background-color: var(--background-default);
     border: 0;
     padding: 16px 24px;
     font-size: 16px;
@@ -105,4 +105,50 @@ form button{
 
 form button:hover{
     background-color: var(--hover-primary-color);
+}
+
+.items-grid{
+    display: grid;
+    /* outra unidade de medida fr que é a fracao */
+    /* grid-template-columns ele separada em quantas colunas informadas */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap é uma ferramenta que é usa junto com grid para espaçamento */
+    gap: 16px;
+}
+
+.items-grid li{
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.items-grid li span{
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    color: var(--title-color);
+
+}
+
+.items-grid li.selected{
+    background: #e1faec;
+    border: 2px solid #34cb39;
+}
+
+.items-grid li img, .items-grid li span{
+    /* arrumando o target */
+    pointer-events: none;
 }
