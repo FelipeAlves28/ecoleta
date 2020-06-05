@@ -1,0 +1,10 @@
+body footer{
+    background: var(--background-default);
+    padding: 20px;
+}
+body footer p{
+    text-align: center;
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,13 +1,17 @@
+body{
+    background: white;
+}
 /* pseudoelemento ::after */
 /* neste bloco esticamos o eixo x e y, e usamos o z-index para colocar o background a por tras de todos os elementos */
 body::after {
     content: "";
-    position: fixed;
-    background: white;
-    top: 260px;
+    position: absolute;
+    background: var(--background-default);
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 17rem;
     z-index: -1;
 }
 
